@@ -36,19 +36,21 @@ body {
     font-weight: 500;
     font-family: Montserrat;
 }
-/*---------------------------------------------------------------*/
+/*--------------------------------------*/
 .wrapper {
     min-height: 100%;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
-/*---------------------------------------------------------------*/
+/*-------------------------------------*/
 ._container {
     max-width: 1046px;
     padding: 0px 15px ;
     margin: 0px auto;
     box-sizing: content-box;
 }
-/*----Шапка-----------------------------------------------------------*/
+/*----Шапка---------------------------*/
 .header {
     position: absolute;
     width: 100%;
@@ -61,6 +63,12 @@ body {
         min-height: 104px;
         align-items: center;
 }
+@media (max-width: 479px) {
+    .header__container {
+        min-height: 70px;
+    }
+}
+
 .header__logo {
     font-size: 24px;
     font-weight: 700;
@@ -101,4 +109,14 @@ body {
     .menu__link {
         font-size: 18px;
     }
+}
+
+/*----page-----------------------------*/
+.page {
+    flex: 1 1 auto;
+}
+
+/*----Подвал---------------------------*/
+.footer {
+
 }
