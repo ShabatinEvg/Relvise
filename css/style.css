@@ -48,7 +48,7 @@ body {
     margin: 0px auto;
     box-sizing: content-box;
 }
-/*---------------------------------------------------------------*/
+/*----Шапка-----------------------------------------------------------*/
 .header {
     position: absolute;
     width: 100%;
@@ -70,11 +70,17 @@ body {
 .header__menu {
     margin: 0px 0px 0px 133px;
 }
-
-.menu {
-    
+@media (max-width: 992px) {
+    .header__menu {
+        margin: 0px 0px 0px 80px;
+    }
 }
 
+@media (max-width: 767px) {
+    .header__menu {
+        margin: 0px 0px 0px 40px;
+    }
+}
 .menu__list {
     flex-wrap: wrap;
     display: flex;
@@ -90,5 +96,9 @@ body {
     color: #737373;
     font-weight: 600;
     line-height: calc(24 / 14 *100%);
-
+}
+@media (max-width: 479px) {
+    .menu__link {
+        font-size: 18px;
+    }
 }
