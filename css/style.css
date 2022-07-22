@@ -142,14 +142,14 @@ body {
     position: relative;
 }
 .main-block__conteiner {
-
+    
  }
 /*------ В body что-то не так, оно под картинкой-------*/
 .main-block__body {
     padding: 184px 0px 191px 0px;
     position: relative;
     z-index: 2;
-    max-width: 509px;
+    max-width: 400px;
 }
 .main-block__body > *:not(:last-child) {
     margin: 0px 0px 35px 0px;
@@ -168,13 +168,33 @@ body {
 
 }
 .main-block__buttons {
+    display: inline-flex;
 }
 .main-block__button {
+    border-radius: 37px;
+    display: flex;
+    min-height: 48px;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    line-height: 150%;
+    padding: 5px 36px;
 }
+.main-block__button:not(:last-child) {
+    margin: 0px 10px 0px 0px;
+}
+
+.main-block__button_orange {
+    background: #FF7B47;
+    color: #fff;
+}
+
 .main-block__button_border {
+    color: #0D5C63;
+    border: 1px solid #0D5C63;
 }
  
-
 .main-block__image {
     position: absolute;
     width: 100%;
@@ -183,3 +203,8 @@ body {
     left: 0;
 }
 
+@media (max-width: 1300px) {
+        .main-block__image img {
+        object-position: right;
+    }
+}
