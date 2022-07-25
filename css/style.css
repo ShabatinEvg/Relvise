@@ -128,11 +128,13 @@ body {
 }
 
 .page__main-block {
-
+    
 }
 
 .page__services {
-
+    position: relative;
+    z-index: 2;
+    margin: -111px 0px 0px 0px;
 }
 
 /*----Подвал---------------------------*/
@@ -250,32 +252,76 @@ body {
 }
 /*-----page__services--------------------*/
 
+.services {
+}
 
 .services__container {
     }
 
 .services__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px -30px;
+}
+@media(max-width: 670px) {
+    .services__body {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px -15px -30px;
     }
+}
 
 .services__column {
+    padding: 0px 15px;
+    flex: 0 1 33.333%;
+    margin: 0px 0px 30px 0px;
+}
+
+@media(max-width: 992px) {
+    .services__column {
+        flex: 0 1 50%;
     }
+}
 
 .services__item {
-    }
+    height: 100%;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0,0.07);
+    background-color: #fff;
+    padding: 35px;
+}
 
 .services_container {
-    }
+
+}
 
 
 .item-service {
+}
 
-    }
-    .item-service__icon {
-    }
+.item-service_green {
+    background-color: #0D5C63;
+}
+.item-service_green .item-service__title {
+    color: #fff;
+}
+.item-service_green .item-service__text {
+    color: #fff;
+}
+.item-service > *:not(:last-chsld) {
+    margin: 0px 0px 10px 0px;
+}
 
-    .item-service__title {
-    }
+.item-service__icon {
+}
 
-    .item-service__text {
-    }
+.item-service__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+}
+
+.item-service__text {
+    color: #737373;
+    line-height: 142%;
+}
 
