@@ -131,6 +131,10 @@ body {
 
 }
 
+.page__services {
+
+}
+
 /*----Подвал---------------------------*/
 .footer {
 
@@ -144,13 +148,20 @@ body {
 .main-block__conteiner {
     
  }
-/*------ В body что-то не так, оно под картинкой-------*/
+/*------ body--------------------------*/
 .main-block__body {
     padding: 184px 0px 191px 0px;
     position: relative;
     z-index: 2;
     max-width: 400px;
 }
+
+@media (max-width: 992px) {
+    .main-block__body {
+        padding: 120px 0px 191px 0px;
+    }
+}
+
 .main-block__body > *:not(:last-child) {
     margin: 0px 0px 35px 0px;
 }
@@ -161,14 +172,28 @@ body {
     font-weight: 800;
 }
 
+@media (max-width: 992px) {
+    .main-block__title {
+        font-size: 42px;
+    }
+}
+
 .main-block__text {
     color: #737373;
     font-size: 20px;
     line-height: 150%;
-
 }
+
+@media (max-width: 479px) {
+    .main-block__text {
+    color: #535353;
+    }
+}
+
 .main-block__buttons {
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px 0;
 }
 .main-block__button {
     border-radius: 37px;
@@ -180,9 +205,18 @@ body {
     font-weight: 700;
     line-height: 150%;
     padding: 5px 36px;
+    margin: 10px 0px;
 }
+
+@media (max-width: 479px) {
+    .main-block__button {
+        flex: 1 1 auto;
+    }
+}
+@media (min-width: 479px) {
 .main-block__button:not(:last-child) {
-    margin: 0px 10px 0px 0px;
+    margin-right: 10px;
+    }
 }
 
 .main-block__button_orange {
@@ -208,3 +242,40 @@ body {
         object-position: right;
     }
 }
+
+@media (max-width: 992px) {
+    .main-block__image {
+        opacity: 0.5;
+    }
+}
+/*-----page__services--------------------*/
+
+
+.services__container {
+    }
+
+.services__body {
+    }
+
+.services__column {
+    }
+
+.services__item {
+    }
+
+.services_container {
+    }
+
+
+.item-service {
+
+    }
+    .item-service__icon {
+    }
+
+    .item-service__title {
+    }
+
+    .item-service__text {
+    }
+
