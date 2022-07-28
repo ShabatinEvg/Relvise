@@ -156,6 +156,19 @@ body {
     color: #737373;
 }
 
+@media (max-width: 992px) {
+    .header-block__title {
+        font-size: 35px;
+
+    }
+}
+@media (max-width: 767px) {
+    .header-block__title {
+        font-size: 30px;
+
+    }
+}
+
 /*----Подвал---------------------------*/
 .footer {
 
@@ -368,10 +381,19 @@ body {
 
 /*-----page__advantages--------------------*/
 
-.page__advantages {
+.advantages {
     padding: 80px 0px;
 }
-.advantages {
+
+@media(max-width: 992px) {
+    .advantages {
+        padding: 50px 0px;
+    }
+}
+@media(max-width: 767px) {
+    .advantages {
+        padding: 30px 0px;
+    }
 }
 .advantages__conteiner {
 }
@@ -380,19 +402,30 @@ body {
 .advantages__header {
     margin: 0px 0px 50px 0px;
 }
+@media(max-width: 767px) {
+    .advantages__header {
+        margin: 0px 0px 25px 0px;
+    }
+}
 
 .advantages__body {
     display: flex;
     flex-wrap: wrap;
-    margin: 0px -15px;
+    margin: 0px -15px -30px;
 }
 .advantages__column {
     padding: 0px 15px;
     flex: 0 1 25%;
+    margin: 0px 0px 30px 0px;
 }
-@media(max-width: 1000px) {
+@media(max-width: 1020px) {
     .advantages__column {
         flex: 0 1 50%;
+    }
+}
+@media(max-width: 560px) {
+    .advantages__column {
+        flex: 0 1 100%;
     }
 }
 .advantages__item {
