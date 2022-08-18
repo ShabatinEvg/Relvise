@@ -555,15 +555,18 @@ body {
 .whoweare {
     padding: 80px 0px 130px 0px;
 }
+
 .whoweare__container {
 }
 
 .whoweare__header {
-    padding: 0px 0px 100px 0px; 
+    margin: 0px 0px 100px 0px; 
 }
 .whoweare__body {
     display: flex;
+    align-items: flex-start;
 }
+
 .whoweare__video {
     flex: 0 0 57%;
     position: relative;
@@ -579,14 +582,16 @@ body {
 }
 .whoweare__content {
     flex: 1 1 auto;
-    padding: 0px 0px 0px 121px;
+    padding: 20px 0px 0px 121px;
 }
+
 .whoweare__titel {
     font-weight: 800;
     font-size: 40px;
     line-height: 142%;
     letter-spacing: 0.2px;
 }
+
 .whoweare__titel:not(:last-child) {
     margin: 0px 0px 10px 0px;
 }
@@ -603,13 +608,73 @@ body {
 .whoweare__item {
     display: flex;
 }
+.whoweare__item:not(:last-child)  {
+    margin: 0px 0px 30px 0px;
+}
 .item-whoweare {
 }
 .item-whoweare__icon {
+    flex: 0 0 32px;
 }
 .item-whoweare__body {
+    flex: 1 1 auto;
+    padding: 0px 0px 0px 20px;
 }
 .item-whoweare__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+}
+.item-whoweare__title:not(:last-child)  {
+    margin: 0px 0px 5px 0px;
 }
 .item-whoweare__text {
+    color: #737373;
+    white-space: nowrap;
+    line-height: 142%;
+    width: 225px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 1080px) {
+    .whoweare__content {
+        padding: 0px 0px 0px 50px;
+    }
+}
+@media (max-width: 950px) {
+    .whoweare {
+        padding: 50px 0px 50px 0px;
+    }
+    .whoweare__body {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        margin: 0px 0px 50px 0px;
+    }
+    .whoweare__titel {
+        font-size: 24px;
+    }
+    .whoweare__content {
+        padding: 0px 0px 0px 0px;
+    }
+    .whoweare__video {
+        padding: 0px 0px 56.25% 0px;
+    }
+    .whoweare__video:not(:last-child) {
+        margin: 50px 0px 0px 0px;
+    }
+    .whoweare__header {
+        margin: 0px 0px 30px 0px;
+    }
+}
+@media (max-width: 767px) {
+    .whoweare {
+        padding: 0px 0px 50px 0px;
+    }
+    .whoweare__video:not(:last-child) {
+        margin: 30px 0px 30px 0px;
+    }
+    .whoweare__top:not(:last-child)  {
+        margin: 0px 0px 0px 0px;
+    }
 }
